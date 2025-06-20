@@ -124,7 +124,7 @@ class PagingController<PageKeyType, ItemType>
     );
   }
   /// loads [newItems] and sets the next page key to `null`.
-  void loadLastPage(List<ItemType> newItems) => appendPage(newItems, null);
+  void loadLastPage(List<ItemType> newItems) => loadPage(newItems, null);
 
 
   /// Erases the current error.
